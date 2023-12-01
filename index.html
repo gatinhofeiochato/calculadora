@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .resultado {
+            background-color: black;
+            color: white;
+            border: 1px solid; 
+            border-bottom: none;
+            padding: 30px;
+            font-size: 20px;
+            text-align: right;
+            width: 300px;
+        }
+        .numbers {
+            background-color: white;
+            color: black;
+            display: inline-block; 
+            border: 1px solid; 
+            padding: 5px;
+            width: 75px;
+        }
+
+        .actions {
+            background-color: #cecece;
+            display: inline-block; 
+            border: 1px solid; 
+            padding: 5px;
+            
+            width: 75px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div class="actions" id="soma" onclick ="show('+')">+</div>
+        <div class="actions" id="subtracao"onclick ="show('-')">-</div>
+        <div class="actions"id="divisao"onclick = "show('/')">/</div>
+        <div class="actions"id="multiplicacao">*</div>
+      
+        <div>
+            <div  class="numbers"onclick = "show('9')">9</div>
+            <div  class="numbers"onclick = "show('8')">8</div>
+            <div  class="numbers"onclick ="show('7')">7</div>
+        </div>
+        <div>
+            <div  class="numbers"onclick ="show('4')">4</div>
+            <div  class="numbers"onclick = "show('5')">5</div>
+            <div  class="numbers"onclick = "show('6')">6</div>
+        </div>
+        <div>
+            <div  class="numbers"onclick ="show('1')">1</div>
+            <div  class="numbers"onclick = "show('2')">2</div>
+            <div  class="numbers"onclick ="show('3')">3</div>
+        </div>
+        <div>
+            <div  class="numbers"onclick = "show('0')">0</div>
+            <div  class="numbers"onclick = "calculaR('=')">=</div>
+            <div  class="numbers"onclick = "limpar('AC')">AC</div>
+        </div>
+        <div>
+           
+    
+    
+     
+
+         <script>
+         function show(volue){
+            const resultado = document.getElementById('resultado')
+            resultado.innerHTML = resultado.innerHTML + volue
+         }
+    </script>
+           
+</body>
+</html>
